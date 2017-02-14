@@ -8,7 +8,7 @@ This is nothing more than what I have found is one of the best ways to improve e
 Most of the time when I personally created triggers and tried to organized everything in it without thinking on any trigger framework.. depending on the functionality needed... Let's say I need to do some validation on records and also I want to update some fields based on other field values, I would probably do a trigger and attach it to a before event, like the following:
 
 ```java
-trigger MyTrigger on Referral__c (before update) {
+trigger MyTrigger on MyObject__c (before update) {
     
         HelperZ.ValidateRecords(Trigger.new, Trigger.OldMap);
         
